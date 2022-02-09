@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="@color/black"
+    app:strokeColor="@color/super_hero_green"
+    app:strokeWidth="3dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/superHeroName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SuperHero"
+                android:textSize="22sp"
+                android:fontFamily="@font/architects_daughter"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/superHeroImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/unavilable_pic"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
